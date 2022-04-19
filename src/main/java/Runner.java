@@ -51,7 +51,18 @@ public class Runner {
         }
         }
 //        2. Print the difference between the largest and smallest value
-        
+        int small = 100;
+        int large = 0;
+
+        for (int i = 0; i < numbers.size(); i++){
+            if (numbers.get(i) < small){
+                small = numbers.get(i);
+            }
+            if (numbers.get(i) > large){
+                large = numbers.get(i);
+            }
+        }
+        System.out.println(large - small);
 //        3. Print true if the list contains a 1 next to a 1 somewhere
 //        4. Print the sum of the numbers
 //        5. Print the sum of the numbers...
