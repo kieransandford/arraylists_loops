@@ -17,20 +17,28 @@ public class Runner {
 
 //        1. Add "Coll" to the end of the list
         scottishIslands.add("Coll");
+
 //        2. Add "Tiree" to the start of the list
         scottishIslands.add(0,"Tiree");
+
 //        3. Add "Islay" after "Jura" and before "Mull"
         scottishIslands.add(2,"Islay");
+
 //        4. Print out the index position of "Skye"
-        System.out.println(scottishIslands.indexOf("Skye"));
+        System.out.println("The index position of Skye is " + scottishIslands.indexOf("Skye"));
+
 //        5. Remove "Tresco" from the list by name
         scottishIslands.remove("Tresco");
+
 //        6. Remove "Arran" from the list by index
         scottishIslands.remove(5);
+
 //        7. Print the number of islands in your arraylist
-        System.out.println(scottishIslands.size());
+        System.out.println("There are " + scottishIslands.size() + " Scottish Islands");
+
 //        8. Sort the list alphabetically
-        Collections.sort(scottishIslands, String.CASE_INSENSITIVE_ORDER);
+        Collections.sort(scottishIslands);
+
 //        9. Print out all the islands using a for loop
         for (int i = 0; i < scottishIslands.size(); i++){
             System.out.println(scottishIslands.get(i));
@@ -64,7 +72,26 @@ public class Runner {
         }
         System.out.println(large - small);
 //        3. Print true if the list contains a 1 next to a 1 somewhere
+        for (int i = 0; i < numbers.size(); i++){
+            if (numbers.get(i) == 1){
+                if (numbers.get(i) == numbers.get(i + 1)){
+                    System.out.println("True");
+                    break;
+                } else {
+                    System.out.println("False");
+                }
+            }
+        }
+
 //        4. Print the sum of the numbers
+        int sum = 0;
+
+        for (int i = 0; i < numbers.size(); i++) {
+            sum += numbers.get(i);
+        }
+
+        System.out.println("The sum of the numbers is " + sum);
+
 //        5. Print the sum of the numbers...
 //           ...except the number 13 is unlucky, so it does not count...
 //           ...and numbers that come immediately after a 13 also do not count
