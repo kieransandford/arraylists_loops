@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -29,8 +30,10 @@ public class Runner {
 //        7. Print the number of islands in your arraylist
         System.out.println(scottishIslands.size());
 //        8. Sort the list alphabetically
-        
 //        9. Print out all the islands using a for loop
+        for (int i = 0; i < scottishIslands.size(); i++){
+            System.out.println(scottishIslands.get(i));
+        }
 
         System.out.println(scottishIslands);
 
